@@ -9,7 +9,7 @@ def product(l):
     return p
 class factor:
     def LCM(a, b):
-        for i in range(1, a*b+1):
+        for i in range(max([a,b]), a*b+1):
             if i%a == 0 and i%b == 0:
                 return i
     def GCD(a, b):
