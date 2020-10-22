@@ -1,3 +1,10 @@
+def piestimate(acuracy):
+    start = 0
+    for num in range(1, acuracy, 4):
+        start += 1/num - 1/(num+2)
+    start = start*4
+    return "{:.10f}".format(start)
+print(piestimate(200000000))
 def sqrt(x):
     return x**(1/2)
 def floor(x):
